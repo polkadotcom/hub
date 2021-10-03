@@ -1,0 +1,149 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-white: #fff ;
+  --ifm-color-primary: #E6007A ;
+  --ifm-color-primary-dark: rgb(187, 3, 101);
+  --ifm-color-primary-darker: rgb(156, 2, 84);
+  --ifm-color-primary-darkest: rgb(112, 2, 60);
+  --ifm-color-primary-light: rgb(250, 30, 146);
+  --ifm-color-primary-lighter: rgb(255, 72, 169);
+  --ifm-color-primary-lightest: rgb(255, 142, 202);
+  --ifm-color-dark: #172026;
+  --ifm-heading-color: #172026;
+  --ifm-background-dark: #172026;
+  --ifm-color-grey: #8E8E8E;
+  --ifm-code-font-size: 95%;
+
+  /* Button Styles */
+  --ifm-button-color: #fff;
+  --ifm-button-font-weight: 200;
+  --ifm-button-border-radius: 100px;
+  --ifm-button-padding-vertical: .5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ifm-heading-color);
+}
+[data-theme="dark"] h1, 
+[data-theme="dark"] h2, 
+[data-theme="dark"] h3, 
+[data-theme="dark"] h4, 
+[data-theme="dark"] h5, 
+[data-theme="dark"] h6 {
+  color: var(--ifm-color-white);
+}
+.text--white {
+  color: var(--ifm-color-white);
+}
+.text--grey {
+  color: var(--ifm-color-grey);
+}
+.button--lg {
+  --ifm-button-size-multiplier: 1.6;
+}
+.button {
+  background-color: var(--ifm-button-background-color);
+  border-color: var(--ifm-button-border-color);
+  border-radius: var(--ifm-button-border-radius);
+  border-width: var(--ifm-button-border-width);
+  color: var(--ifm-button-color);
+  font-size: calc(0.7rem * var(--ifm-button-size-multiplier));
+  font-weight: var(--ifm-button-font-weight);
+  padding: calc( var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier) ) calc( var(--ifm-button-padding-horizontal) * var(--ifm-button-size-multiplier) );
+}
+.button--outline {
+  --ifm-button-color: var(--ifm-button-color);
+}
+.hero--dark {
+  --ifm-hero-background-color: var( --ifm-background-dark);
+}
+[data-theme="dark"] .button--primary.button--outline:hover,
+[data-theme="dark"] .button--primary.button--outline:active,
+[data-theme="dark"] .button--primary.button--outline.button--active {
+  --ifm-button-color: var(--ifm-color-white);
+}
+/* Custom */
+[data-theme="light"]  img.navbar__logo {
+  content: url('../../static/img/logo-dark.svg');
+}
+h1.hero__title {
+  display: none;
+}
+.hero .hero__subtitle{
+  color: var(--ifm-color-grey); 
+  font-weight: var(--ifm-font-weight-light);
+  font-size: 2.3rem;
+  margin: 3rem auto;
+  line-height: 1.3;
+}
+@media screen and (max-width: 966px) {
+  .hero .hero__subtitle {
+      font-size: 1.7rem;
+      margin: 2rem auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .hero .hero__subtitle {
+      font-size: 1.2rem;
+      margin: 1rem auto;
+  }
+}
+/* End Custom */
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+html[data-theme='light'] .DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary); */
+  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+
+html[data-theme='dark'] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+}

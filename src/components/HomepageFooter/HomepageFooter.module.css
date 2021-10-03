@@ -1,0 +1,39 @@
+
+.socials {
+  width: 100%;
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  padding: 2rem 1rem;
+}
+.socials a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials a+a {
+  margin-left: 1rem;
+}
+.socials a:hover img {
+  opacity: .8;
+}
+.socials a svg {
+  width: 26px;
+  height: 26px
+}
+
+.socials a:nth-of-type(5) svg{
+  width: 30px;
+  height: 30px
+}
+.socials p {
+  margin-top: calc(var(--ifm-paragraph-margin-bottom)/2);
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 575px) {
+  .socials {
+    position: relative;
+    padding: 2rem 1rem 0 1rem;
+  }
+}
