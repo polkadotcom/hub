@@ -6,7 +6,7 @@ module.exports = {
   title: "PolkaHub",
   tagline: "Unify your Polkadot experience.",
   url: "https://polkadotcom.github.io",
-  baseUrl: "/",
+  baseUrl: "/hub/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
