@@ -5,4 +5,4 @@ sidebar_position: 1
 
 # Blockchain Basics
 
-TBD
+Here you'll learn about the blockchain.
