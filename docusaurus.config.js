@@ -5,7 +5,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 module.exports = {
   title: "PolkaHub",
   tagline: "Unify your Polkadot experience.",
-  url: "https://polkadotcom.github.io",
+  url: "https://polkadot.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
