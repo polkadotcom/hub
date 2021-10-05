@@ -9,7 +9,6 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  cname: "polkadot.com",
   favicon: "img/favicon.ico",
   organizationName: "polkadotcom", // Usually your GitHub org/user name.
   projectName: "hub", // Usually your repo name.
