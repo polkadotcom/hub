@@ -15,7 +15,9 @@ export function Homepage() {
       <div className={clsx("container", styles.heroContainer)}>
         <Logo />
         <h1 className="hero__title text--white">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          The <span>unofficial</span> hub of a unified Dotsama experience
+        </p>
         <HomepageButtons />
       </div>
       <HomepageFooter />
