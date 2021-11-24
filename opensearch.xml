@@ -4,7 +4,7 @@
   <ShortName>PolkaHub</ShortName>
   <Description>Search PolkaHub</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://polkadot.com/img/favicon.ico</Image>
+  <Image width="16" height="16" type="image/x-icon">https://polkadot.com/img/favicon.png</Image>
   <Url type="text/html" method="get" template="https://polkadot.com/search?q={searchTerms}"/>
   <Url type="application/opensearchdescription+xml" rel="self" template="https://polkadot.com/opensearch.xml" />
   <moz:SearchForm>https://polkadot.com/</moz:SearchForm>
