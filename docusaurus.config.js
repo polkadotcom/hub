@@ -4,12 +4,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: "PolkaHub",
-  tagline: "Unify your Polkadot experience.",
+  tagline: "",
   url: "https://polkadot.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.png",
   organizationName: "polkadotcom", // Usually your GitHub org/user name.
   projectName: "hub", // Usually your repo name.
   trailingSlash: false, // GitHub Pages adds a trailing slash to Docusaurus URLs by default. It is recommended to set a trailingSlash config (true or false, not undefined).
@@ -64,10 +64,6 @@ module.exports = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/polkahub",
-            },
-            {
               label: "Discord",
               href: "https://discordapp.com/invite/polkahub",
             },
@@ -91,7 +87,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Polkahub.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Polkadot.com.`,
     },
     prism: {
       theme: lightCodeTheme,

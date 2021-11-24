@@ -14,8 +14,10 @@ export const HomepageFooter = () => {
       {SocialList.map((props, idx) => (
         <Social key={idx} {...props} />
       ))}
-      <p className="text--grey">
-        © Polkadot.com · Privacy Policy · Terms and Conditions
+      <p className="text--grey">© Polkadot.com</p>
+      <p>
+        Polkadot.com is in no way affiliated with Web3 Foundation or Parity Technologies. It is a
+        community-run knowledgebase and toolkit.
       </p>
     </div>
   );
@@ -24,7 +26,7 @@ export const HomepageFooter = () => {
 const SocialList = [
   {
     linkTitle: "Github",
-    link: "/",
+    link: "https://github.com/polkadotcom",
     Svg: GitHubLogo,
   },
   {
@@ -38,13 +40,8 @@ const SocialList = [
     Svg: DiscordLogo,
   },
   {
-    linkTitle: "instagram",
-    link: "/",
-    Svg: InstagramLogo,
-  },
-  {
     linkTitle: "Mail",
-    link: "/",
+    link: "mailto:contact@polkadot.com",
     Svg: MailLogo,
   },
 ];

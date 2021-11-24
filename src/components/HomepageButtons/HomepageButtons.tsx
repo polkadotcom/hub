@@ -35,8 +35,8 @@ const ButtonList: ButtonProps[] = [
     link: "javascript:alert('Coming soon')",
   },
   {
-    linkTitle: "PODCAST",
-    link: "javascript:alert('Coming soon')",
+    linkTitle: "FAQ",
+    link: "/docs/faq",
   },
 ];
 
@@ -48,9 +48,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ linkTitle, link }) => {
   return (
     <div className={styles.buttons}>
-      <a
-        className="button button--primary button--outline button--lg"
-        href={link}>
+      <a className="button button--primary button--outline button--lg" href={link}>
         {linkTitle}
       </a>
     </div>
